@@ -71,8 +71,9 @@ function App() {
     <>
       <SearchBar handleSearchBar={handleSearchBar} isDisabled={isLoading} />
       <div className={style.container}>
-        {error && <ErrorMessage />}
-        {photos.length ? (
+        {error ? (
+          <ErrorMessage />
+        ) : photos.length > 0 ? (
           <ImageGallery photos={photos} openModal={openModal} />
         ) : (
           <p>No results, pls enter new search request</p>
