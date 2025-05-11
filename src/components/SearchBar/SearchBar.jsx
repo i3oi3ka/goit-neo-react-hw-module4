@@ -12,7 +12,6 @@ const SearchBar = ({ handleSearchBar, isDisabled }) => {
       });
       return;
     }
-    console.log(query);
     handleSearchBar(query);
     event.target.reset();
   };
