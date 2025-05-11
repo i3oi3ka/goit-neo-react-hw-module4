@@ -7,6 +7,7 @@ export const getPhotos = async (searchQuery, page = 1) => {
     params: {
       client_id: "YC6vM8rTbOQ5ThIGUjLKuLx9XKoCNv9Dtloitu66zxU",
       query: searchQuery,
+      per_page: 12,
       page,
     },
   });
